@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/Proxima_Nova_Bold.otf");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/proxima_nova_bold.woff") format("woff");
+	font-style: normal;
+	font-weight: bold;
+}
