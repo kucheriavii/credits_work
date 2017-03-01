@@ -8,17 +8,18 @@ html {
   width: 100%;
   height: 100%;
 }
-
+.row{
+    margin: 0;
+}
 body {
-  background: #f0f0f0;
+  background: #ebebeb;
   width: 100%;
   height: 100%;
+  font: 16px "ProximaNovaRegular", "Arial", sans-serif;
 }
 
 .wrapper {
   min-height: 100%;
-  position: relative;
-  overflow: hidden;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -58,7 +59,7 @@ body {
             display: block;
             border:none;
             background: transparent;
-            font: 20px "ProximaNovaBold", "Arial", sans-serif;
+            font: 20px "ProximaNovaRegular", "Arial", sans-serif;
             line-height: 120px;
             text-transform: uppercase;
             font-weight: normal;
@@ -80,10 +81,205 @@ body {
         }
     }
 }
+.wrapper{
+    .credrow{
+        height: 195px;
+    }
+    ul.raiting{
+        display: block;
+        margin-top: 25px;
+        padding-left: 0;
+        overflow: hidden;
+        li{
+            margin: 0;
+            display: block;
+            float: left;
+            width: 22px;
+            height: 22px;
+            background-image: url("../img/star.png");
+            background-position: 22px 0;
 
+        }
+        li.fullstar{
+            background-position: 0 0;
+        }
+
+    }
+    .credit-box{
+        background: #fff;
+        margin-top: 26px;
+        height: 195px;
+        border: 1px solid #000;
+        border-radius: 5px; 
+        position: relative;
+        padding-top: 40px;
+        overflow: hidden;
+        .credit-raiting{
+            a{
+                display: block;
+                margin: 0;
+                img{
+                    padding-left: 20px;
+                    margin: 0;
+                    height: 40px;
+                }
+            }
+            span.votes{
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+                font: 16px "ProximaNovaRegular", "Arial", sans-serif;
+                color:#000;
+            }
+
+
+        }
+        .my-credit{
+            position: relative;
+            height: 105px;
+            .vertical-align{
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            .credit-name{
+                font: 18px "ProximaNovaBold", "Arial", sans-serif;
+                text-transform: capitalize;
+            }
+            .credit{
+                margin-top: 20px;
+                padding-left: 0;
+                .credit-size-text, .credit-term-text, .credit-proc-text{
+                    display: block;
+                    padding-bottom: 4px; 
+                }
+                .credit-val{
+                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font-weight: bold;
+                    &:after{
+                        content: " UAH";
+                    }
+                }
+                .credit-term{
+                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font-weight: bold;
+                    &:after{
+                        content: " UAH";
+                    }
+                }
+                .credit-proc{
+                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font-weight: bold;
+                    &:after{
+                        content: " UAH";
+                    }
+                } 
+            }
+        }
+        .order{
+            button{
+                width: 198px;
+                height: 54px;
+                border-radius: 7px;
+                display: block;
+                border: solid 1px #ccc;
+                font: 16px "ProximaNovaBold", "Arial", sans-serif;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 14px;
+            }
+            .btn-green{
+                background: #6db63e;
+                color: #fff;
+            }
+        }
+    }
+    article.my-credit-article{
+        clear: both;
+        h1{
+            font: 24px "ProximaNovaBold", "Arial", sans-serif;
+            font-weight: bold;
+            padding: 30px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .article-content{
+            margin-bottom: 38px;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .feedback{
+        width: 90%;
+        margin: 0 auto;
+        h2{
+            font: 24px "ProximaNovaBold", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            width: 100%;
+            &:before{
+                display: inline-block;
+                content: "";
+                background-image: url(../img/feetback.png);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 21px;
+            }
+        }
+        .form{
+            margin-top: 25px;
+            clear: both;
+            input.name, input.mail{
+                width: 90%;
+                height: 60px;
+                display: block;
+                border-radius: 4px;
+                border: 1px solid #1265ac;
+                padding-left: 40px;
+                background-repeat: no-repeat;
+                background-position: 16px 50%;
+                margin-bottom: 30px;
+
+            }
+            .name{
+                background-image: url("../img/man.png");
+            }
+            .mail{
+                float: right;
+                background-image: url("../img/mail.png");
+            }
+            .mk-feedback{
+                width: 100%;
+                height: 305px;
+                border-radius: 4px;
+                border: 1px solid #1265ac;
+                padding: 10px; 
+            }
+            .add-feedback{
+                width: 198px;
+                height: 54px;
+                border-radius: 7px;
+                display: block;
+                border: solid 1px #ccc;
+                font: 16px "ProximaNovaBold", "Arial", sans-serif;
+                text-transform: uppercase;
+                margin-top: 14px;
+                background: #6db63e;
+                color: #fff;
+                float: right;
+            }
+        }
+    }
+}
 .footer {
   height: 304px;
   margin-top: -304px;
   position: relative;
   background: #333;
+  font-size: 20px;
 }
