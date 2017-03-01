@@ -272,7 +272,7 @@ body {
 }
 /* line 182, sass/screen.scss */
 .wrapper .credit-box .order button {
-  width: 198px;
+  width: 220px;
   height: 54px;
   border-radius: 7px;
   display: block;
@@ -378,8 +378,90 @@ body {
   color: #fff;
   float: right;
 }
+/* line 277, sass/screen.scss */
+.wrapper .feedback .inname, .wrapper .feedback .inmail, .wrapper .feedback .inarea {
+  padding: 0;
+}
+/* line 281, sass/screen.scss */
+.wrapper .comments {
+  background: #fff;
+  margin-bottom: 50px;
+  margin-top: 56px;
+}
+/* line 286, sass/screen.scss */
+.wrapper .comments .photo img {
+  display: block;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  margin: 60px auto 10px;
+}
+/* line 293, sass/screen.scss */
+.wrapper .comments .photo .name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: 17px "ProximaNovaBold", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+/* line 303, sass/screen.scss */
+.wrapper .comments .comment-message .raiting {
+  float: left;
+  width: 50%;
+}
+/* line 307, sass/screen.scss */
+.wrapper .comments .comment-message .date {
+  float: right;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 69px;
+  font-size: 15px;
+  color: #333;
+}
+/* line 314, sass/screen.scss */
+.wrapper .comments .comment-message .date:before {
+  background: url(../img/calendar.png);
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  top: 2px;
+  position: relative;
+}
+/* line 324, sass/screen.scss */
+.wrapper .comments .comment-message .message-text {
+  clear: both;
+  font: 18px "ProximaNovaRegular", "Arial", sans-serif;
+  padding-bottom: 20px;
+}
+/* line 329, sass/screen.scss */
+.wrapper .comments .comment-message .answer, .wrapper .comments .comment-message .answer-count {
+  float: right;
+  font: 18px, "ProximaNovaRegular";
+  color: #333;
+  text-decoration: none;
+  margin-left: 50px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin-bottom: 25px;
+}
+/* line 338, sass/screen.scss */
+.wrapper .comments .comment-message .answer:hover, .wrapper .comments .comment-message .answer-count:hover {
+  border-color: transparent;
+}
+/* line 342, sass/screen.scss */
+.wrapper .comments .comment-message .answer-count:after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/feetbackBlack.png);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  margin: -8px 5px;
+}
 
-/* line 279, sass/screen.scss */
+/* line 354, sass/screen.scss */
 .footer {
   height: 304px;
   margin-top: -304px;
