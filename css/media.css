@@ -121,7 +121,7 @@
 	    width: 100%;
 	}
 	.answer-form .photo, .wrapper .comments .answer-form .photo img{
-		margin: 0;
+		margin: 0 auto;
 	}
 	
 	.container {
@@ -145,6 +145,18 @@
 	    font: 16px "ProximaNovaRegular", "Arial", sans-serif;
 	    color: #fff;
 	    line-height: 64px;
+	}
+	article.credit {
+	    clear: both;
+	    height: auto;
+	    margin-top: -210px;
+	    margin-bottom: 242px;
+	    background: #fff;
+	    padding: 45px 15px;
+	}
+	article.credit .more {
+	    padding-right: 20px;
+	    margin-top: 20px;
 	}
 }
 
@@ -172,6 +184,15 @@
 	}
 	.answer-form .photo, .wrapper .comments .answer-form .photo img{
 		margin: 0;
+	}
+	.wrapper .comments .comment-message .mk-feedback {
+	    width: 90%;
+	    height: 135px;
+	    border-radius: 4px;
+	    border: 1px solid #000;
+	    padding: 10px;
+	    display: block;
+	    margin: 0 0 0 auto;
 	}
 	
 }

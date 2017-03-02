@@ -82,6 +82,194 @@ body {
     }
 }
 .wrapper{
+    .header-page{
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .main-article{
+            h1{
+                font: 24px "ProximaNovaBold", "Arial", sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .main-text{
+                font: 20px "ProximaNovaRegular", "Arial", sans-serif;
+            }
+        }
+    }
+    .credit-sum{
+        clear: both;
+        .main-credit-sum, .main-limit-sum{
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "ProximaNovaBold", "Arial", sans-serif;
+            color: #1265ac;
+            margin-bottom: 20px;
+            &:before{
+                content: "";
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                background-image: url(../img/calc.png);
+                background-repeat: no-repeat;
+                position: relative;
+                top: 3px;
+                right: 10px;
+            }
+        }
+        .main-limit-sum:before{
+            background-image: url(../img/sand.png); 
+        }
+        .min{
+            float: left;
+            margin-top: 10px;
+        }
+        .max {
+            float: right;
+            margin-top: 10px;
+        }
+        .grad{
+            text-align: justify;
+            margin-top: 10px;
+            &:after{
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 0;
+            }
+            li{
+                display: inline-block;
+            }
+        }
+        .credit-val, .limit-val{
+            font: 20px "ProximaNovaRegular", "Arial", sans-serif;
+            margin: 10px auto;
+            text-align: center;
+            font-weight: bold;
+            &:after{
+                content: " uah.";
+            }
+        }
+        .limit-val:after{
+            content: " days";
+        }
+        /*scroller*/
+        .noUi-horizontal .noUi-handle {
+            width: 28px;
+            height: 28px;
+            left: -17px;
+            top: -6px;
+        }
+        .noUi-handle {
+            border-radius: 50%;
+            background: #228bcc;
+            box-shadow: none;
+            -webkit-box-shadow: #d7d7d7 3px 2px 3px;
+            box-shadow: #d7d7d7 3px 2px 3px;
+            border: none;
+        }
+        .noUi-connect {
+            background: #228bcc;
+            border-radius: 25px;
+        }
+        .noUi-target{
+            border-radius: 25px;
+        }
+        .noUi-base {
+            background: #d7d7d7;
+            -webkit-box-shadow: #d7d7d7 0px 5px 3px;
+            box-shadow: #d7d7d7 0px 5px 3px;
+            border-radius: 25px;
+        }
+        .noUi-handle:after, .noUi-handle:before {
+            background: transparent;
+        }
+        /***************scroller************************/
+    }
+    .credit-item{
+        width: 100%;
+        clear: both;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #000;
+        position: relative;
+        overflow: hidden;
+        min-height: 190px;
+        margin-bottom: 25px;
+        .logobox {
+            display: block;
+            height: 100%;
+            /* display: table-cell; */
+            /* vertical-align: middle; */
+            margin: 40px 0;
+        }
+        .raiting{
+            clear: both;
+            position: relative;
+        }
+        .order{
+            margin-top: 30px;
+        }
+        button{
+            width: 195px;
+            height: 54px;
+            border-radius: 7px;
+            display: block;
+            border: solid 1px #ccc;
+            font: 16px "ProximaNovaBold", "Arial", sans-serif;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 14px;
+            float: right;
+            margin-right: 15px;
+        }
+        .btn-green{
+            background: #6db63e;
+            color: #fff;
+        }
+    }
+    .creditoptions{
+
+        .math{
+            text-align: justify;
+            width: 100%;
+            margin-top: 55px;
+            padding-left: 15px;
+            &:after{
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 0;
+            } 
+        }
+        li{
+            display: inline-block;
+            text-align: center;
+            .num{
+                width: 100%;
+                display: block;
+                text-align: center;
+                font: 24px "ProximaNovaBold", "Arial", sans-serif;
+                margin-bottom: 18px;
+            }
+            .desr{
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                font: 14px "ProximaNovaRegular", "Arial", sans-serif;
+                text-transform: uppercase;
+                color: #aaa;
+                &:after{
+                    content: "+";
+                    display: inline-block;
+                    color: transparent;
+                }
+            }
+        }
+    }
     .credrow{
         height: 195px;
     }
@@ -396,12 +584,36 @@ body {
             }
         }
         .answer-form{
-            width: 90%;
+            width: 100%;
             margin: auto;
         }
 
     }
 
+}
+article.credit{
+    clear: both;
+    height: auto;
+    margin-top: -210px;
+    margin-bottom: 242px;
+    background: #fff;
+    padding: 45px 0;
+    h2{
+        font: 24px "ProximaNovaBold", "Arial", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        padding-top: 20px;
+    }
+    .more{
+        float: right;
+        display: block;
+        padding-right: 15px;
+        font-size: 16px;
+        font-family: "ProximaNovaRegular", "Arial", sans-serif;
+        text-decoration: underline;
+    }
 }
 .footer {
   height: 240px;

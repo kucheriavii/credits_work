@@ -161,17 +161,233 @@ body {
 }
 
 /* line 85, sass/screen.scss */
+.wrapper .header-page {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 90, sass/screen.scss */
+.wrapper .header-page .main-article h1 {
+  font: 24px "ProximaNovaBold", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 97, sass/screen.scss */
+.wrapper .header-page .main-article .main-text {
+  font: 20px "ProximaNovaRegular", "Arial", sans-serif;
+}
+/* line 102, sass/screen.scss */
+.wrapper .credit-sum {
+  clear: both;
+  /*scroller*/
+  /***************scroller************************/
+}
+/* line 104, sass/screen.scss */
+.wrapper .credit-sum .main-credit-sum, .wrapper .credit-sum .main-limit-sum {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
+  color: #1265ac;
+  margin-bottom: 20px;
+}
+/* line 111, sass/screen.scss */
+.wrapper .credit-sum .main-credit-sum:before, .wrapper .credit-sum .main-limit-sum:before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/calc.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+  right: 10px;
+}
+/* line 123, sass/screen.scss */
+.wrapper .credit-sum .main-limit-sum:before {
+  background-image: url(../img/sand.png);
+}
+/* line 126, sass/screen.scss */
+.wrapper .credit-sum .min {
+  float: left;
+  margin-top: 10px;
+}
+/* line 130, sass/screen.scss */
+.wrapper .credit-sum .max {
+  float: right;
+  margin-top: 10px;
+}
+/* line 134, sass/screen.scss */
+.wrapper .credit-sum .grad {
+  text-align: justify;
+  margin-top: 10px;
+}
+/* line 137, sass/screen.scss */
+.wrapper .credit-sum .grad:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+/* line 143, sass/screen.scss */
+.wrapper .credit-sum .grad li {
+  display: inline-block;
+}
+/* line 147, sass/screen.scss */
+.wrapper .credit-sum .credit-val, .wrapper .credit-sum .limit-val {
+  font: 20px "ProximaNovaRegular", "Arial", sans-serif;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 152, sass/screen.scss */
+.wrapper .credit-sum .credit-val:after, .wrapper .credit-sum .limit-val:after {
+  content: " uah.";
+}
+/* line 156, sass/screen.scss */
+.wrapper .credit-sum .limit-val:after {
+  content: " days";
+}
+/* line 160, sass/screen.scss */
+.wrapper .credit-sum .noUi-horizontal .noUi-handle {
+  width: 28px;
+  height: 28px;
+  left: -17px;
+  top: -6px;
+}
+/* line 166, sass/screen.scss */
+.wrapper .credit-sum .noUi-handle {
+  border-radius: 50%;
+  background: #228bcc;
+  box-shadow: none;
+  -webkit-box-shadow: #d7d7d7 3px 2px 3px;
+  box-shadow: #d7d7d7 3px 2px 3px;
+  border: none;
+}
+/* line 174, sass/screen.scss */
+.wrapper .credit-sum .noUi-connect {
+  background: #228bcc;
+  border-radius: 25px;
+}
+/* line 178, sass/screen.scss */
+.wrapper .credit-sum .noUi-target {
+  border-radius: 25px;
+}
+/* line 181, sass/screen.scss */
+.wrapper .credit-sum .noUi-base {
+  background: #d7d7d7;
+  -webkit-box-shadow: #d7d7d7 0px 5px 3px;
+  box-shadow: #d7d7d7 0px 5px 3px;
+  border-radius: 25px;
+}
+/* line 187, sass/screen.scss */
+.wrapper .credit-sum .noUi-handle:after, .wrapper .credit-sum .noUi-handle:before {
+  background: transparent;
+}
+/* line 192, sass/screen.scss */
+.wrapper .credit-item {
+  width: 100%;
+  clear: both;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  min-height: 190px;
+  margin-bottom: 25px;
+}
+/* line 202, sass/screen.scss */
+.wrapper .credit-item .logobox {
+  display: block;
+  height: 100%;
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  margin: 40px 0;
+}
+/* line 209, sass/screen.scss */
+.wrapper .credit-item .raiting {
+  clear: both;
+  position: relative;
+}
+/* line 213, sass/screen.scss */
+.wrapper .credit-item .order {
+  margin-top: 30px;
+}
+/* line 216, sass/screen.scss */
+.wrapper .credit-item button {
+  width: 195px;
+  height: 54px;
+  border-radius: 7px;
+  display: block;
+  border: solid 1px #ccc;
+  font: 16px "ProximaNovaBold", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 14px;
+  float: right;
+  margin-right: 15px;
+}
+/* line 229, sass/screen.scss */
+.wrapper .credit-item .btn-green {
+  background: #6db63e;
+  color: #fff;
+}
+/* line 236, sass/screen.scss */
+.wrapper .creditoptions .math {
+  text-align: justify;
+  width: 100%;
+  margin-top: 55px;
+  padding-left: 15px;
+}
+/* line 241, sass/screen.scss */
+.wrapper .creditoptions .math:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+/* line 248, sass/screen.scss */
+.wrapper .creditoptions li {
+  display: inline-block;
+  text-align: center;
+}
+/* line 251, sass/screen.scss */
+.wrapper .creditoptions li .num {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font: 24px "ProximaNovaBold", "Arial", sans-serif;
+  margin-bottom: 18px;
+}
+/* line 258, sass/screen.scss */
+.wrapper .creditoptions li .desr {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font: 14px "ProximaNovaRegular", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #aaa;
+}
+/* line 265, sass/screen.scss */
+.wrapper .creditoptions li .desr:after {
+  content: "+";
+  display: inline-block;
+  color: transparent;
+}
+/* line 273, sass/screen.scss */
 .wrapper .credrow {
   height: 195px;
 }
-/* line 88, sass/screen.scss */
+/* line 276, sass/screen.scss */
 .wrapper ul.raiting {
   display: block;
   margin-top: 25px;
   padding-left: 0;
   overflow: hidden;
 }
-/* line 93, sass/screen.scss */
+/* line 281, sass/screen.scss */
 .wrapper ul.raiting li {
   margin: 0;
   display: block;
@@ -181,11 +397,11 @@ body {
   background-image: url("../img/star.png");
   background-position: 22px 0;
 }
-/* line 103, sass/screen.scss */
+/* line 291, sass/screen.scss */
 .wrapper ul.raiting li.fullstar {
   background-position: 0 0;
 }
-/* line 108, sass/screen.scss */
+/* line 296, sass/screen.scss */
 .wrapper .credit-box {
   background: #fff;
   margin-top: 26px;
@@ -196,18 +412,18 @@ body {
   padding-top: 40px;
   overflow: hidden;
 }
-/* line 118, sass/screen.scss */
+/* line 306, sass/screen.scss */
 .wrapper .credit-box .credit-raiting a {
   display: block;
   margin: 0;
 }
-/* line 121, sass/screen.scss */
+/* line 309, sass/screen.scss */
 .wrapper .credit-box .credit-raiting a img {
   padding-left: 20px;
   margin: 0;
   height: 40px;
 }
-/* line 127, sass/screen.scss */
+/* line 315, sass/screen.scss */
 .wrapper .credit-box .credit-raiting span.votes {
   display: inline-block;
   width: 100%;
@@ -215,12 +431,12 @@ body {
   font: 16px "ProximaNovaRegular", "Arial", sans-serif;
   color: #000;
 }
-/* line 137, sass/screen.scss */
+/* line 325, sass/screen.scss */
 .wrapper .credit-box .my-credit {
   position: relative;
   height: 105px;
 }
-/* line 140, sass/screen.scss */
+/* line 328, sass/screen.scss */
 .wrapper .credit-box .my-credit .vertical-align {
   position: relative;
   top: 50%;
@@ -228,49 +444,49 @@ body {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 147, sass/screen.scss */
+/* line 335, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit-name {
   font: 18px "ProximaNovaBold", "Arial", sans-serif;
   text-transform: capitalize;
 }
-/* line 151, sass/screen.scss */
+/* line 339, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit {
   margin-top: 20px;
   padding-left: 0;
 }
-/* line 154, sass/screen.scss */
+/* line 342, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-size-text, .wrapper .credit-box .my-credit .credit .credit-term-text, .wrapper .credit-box .my-credit .credit .credit-proc-text {
   display: block;
   padding-bottom: 4px;
 }
-/* line 158, sass/screen.scss */
+/* line 346, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-val {
   font: 18px "ProximaNovaBold", "Arial", sans-serif;
   font-weight: bold;
 }
-/* line 161, sass/screen.scss */
+/* line 349, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-val:after {
   content: " UAH";
 }
-/* line 165, sass/screen.scss */
+/* line 353, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-term {
   font: 18px "ProximaNovaBold", "Arial", sans-serif;
   font-weight: bold;
 }
-/* line 168, sass/screen.scss */
+/* line 356, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-term:after {
   content: " UAH";
 }
-/* line 172, sass/screen.scss */
+/* line 360, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-proc {
   font: 18px "ProximaNovaBold", "Arial", sans-serif;
   font-weight: bold;
 }
-/* line 175, sass/screen.scss */
+/* line 363, sass/screen.scss */
 .wrapper .credit-box .my-credit .credit .credit-proc:after {
   content: " UAH";
 }
-/* line 182, sass/screen.scss */
+/* line 370, sass/screen.scss */
 .wrapper .credit-box .order button {
   width: 220px;
   height: 54px;
@@ -282,16 +498,16 @@ body {
   color: #000;
   margin-bottom: 14px;
 }
-/* line 193, sass/screen.scss */
+/* line 381, sass/screen.scss */
 .wrapper .credit-box .order .btn-green {
   background: #6db63e;
   color: #fff;
 }
-/* line 199, sass/screen.scss */
+/* line 387, sass/screen.scss */
 .wrapper article.my-credit-article {
   clear: both;
 }
-/* line 201, sass/screen.scss */
+/* line 389, sass/screen.scss */
 .wrapper article.my-credit-article h1 {
   font: 24px "ProximaNovaBold", "Arial", sans-serif;
   font-weight: bold;
@@ -299,24 +515,24 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 208, sass/screen.scss */
+/* line 396, sass/screen.scss */
 .wrapper article.my-credit-article .article-content {
   margin-bottom: 38px;
 }
-/* line 210, sass/screen.scss */
+/* line 398, sass/screen.scss */
 .wrapper article.my-credit-article .article-content p {
   margin-bottom: 20px;
 }
-/* line 214, sass/screen.scss */
+/* line 402, sass/screen.scss */
 .wrapper article.my-credit-article .more {
   display: none;
 }
-/* line 218, sass/screen.scss */
+/* line 406, sass/screen.scss */
 .wrapper .feedback {
   width: 90%;
   margin: 0 auto;
 }
-/* line 221, sass/screen.scss */
+/* line 409, sass/screen.scss */
 .wrapper .feedback h2 {
   font: 24px "ProximaNovaBold", sans-serif;
   font-weight: bold;
@@ -325,7 +541,7 @@ body {
   display: block;
   width: 100%;
 }
-/* line 228, sass/screen.scss */
+/* line 416, sass/screen.scss */
 .wrapper .feedback h2:before {
   display: inline-block;
   content: "";
@@ -334,12 +550,12 @@ body {
   width: 30px;
   height: 21px;
 }
-/* line 237, sass/screen.scss */
+/* line 425, sass/screen.scss */
 .wrapper .feedback .form {
   margin-top: 25px;
   clear: both;
 }
-/* line 240, sass/screen.scss */
+/* line 428, sass/screen.scss */
 .wrapper .feedback .form input.name, .wrapper .feedback .form input.mail {
   width: 90%;
   height: 60px;
@@ -351,16 +567,16 @@ body {
   background-position: 16px 50%;
   margin-bottom: 30px;
 }
-/* line 252, sass/screen.scss */
+/* line 440, sass/screen.scss */
 .wrapper .feedback .form .name {
   background-image: url("../img/man.png");
 }
-/* line 255, sass/screen.scss */
+/* line 443, sass/screen.scss */
 .wrapper .feedback .form .mail {
   float: right;
   background-image: url("../img/mail.png");
 }
-/* line 259, sass/screen.scss */
+/* line 447, sass/screen.scss */
 .wrapper .feedback .form .mk-feedback {
   width: 100%;
   height: 305px;
@@ -368,7 +584,7 @@ body {
   border: 1px solid #1265ac;
   padding: 10px;
 }
-/* line 266, sass/screen.scss */
+/* line 454, sass/screen.scss */
 .wrapper .feedback .form .add-feedback {
   width: 198px;
   height: 54px;
@@ -382,18 +598,18 @@ body {
   color: #fff;
   float: right;
 }
-/* line 280, sass/screen.scss */
+/* line 468, sass/screen.scss */
 .wrapper .feedback .inname, .wrapper .feedback .inmail, .wrapper .feedback .inarea {
   padding: 0;
 }
-/* line 284, sass/screen.scss */
+/* line 472, sass/screen.scss */
 .wrapper .comments {
   background: #fff;
   margin-bottom: 50px;
   margin-top: 56px;
   border-radius: 8px;
 }
-/* line 290, sass/screen.scss */
+/* line 478, sass/screen.scss */
 .wrapper .comments .photo img {
   display: block;
   width: 114px;
@@ -401,7 +617,7 @@ body {
   border-radius: 50%;
   margin: 60px auto 10px;
 }
-/* line 297, sass/screen.scss */
+/* line 485, sass/screen.scss */
 .wrapper .comments .photo .name {
   display: block;
   width: 100%;
@@ -410,16 +626,16 @@ body {
   font-weight: bold;
   color: #000;
 }
-/* line 306, sass/screen.scss */
+/* line 494, sass/screen.scss */
 .wrapper .comments .comment-message {
   /*form styles*/
 }
-/* line 308, sass/screen.scss */
+/* line 496, sass/screen.scss */
 .wrapper .comments .comment-message .raiting {
   float: left;
   width: 50%;
 }
-/* line 312, sass/screen.scss */
+/* line 500, sass/screen.scss */
 .wrapper .comments .comment-message .date {
   float: right;
   margin-top: 40px;
@@ -428,7 +644,7 @@ body {
   font-size: 15px;
   color: #333;
 }
-/* line 319, sass/screen.scss */
+/* line 507, sass/screen.scss */
 .wrapper .comments .comment-message .date:before {
   background: url(../img/calendar.png);
   content: "";
@@ -438,13 +654,13 @@ body {
   top: 2px;
   position: relative;
 }
-/* line 329, sass/screen.scss */
+/* line 517, sass/screen.scss */
 .wrapper .comments .comment-message .message-text {
   clear: both;
   font: 18px "ProximaNovaRegular", "Arial", sans-serif;
   padding-bottom: 20px;
 }
-/* line 334, sass/screen.scss */
+/* line 522, sass/screen.scss */
 .wrapper .comments .comment-message .answer, .wrapper .comments .comment-message .answer-count {
   float: right;
   font: 18px "ProximaNovaRegular";
@@ -455,11 +671,11 @@ body {
   display: block;
   margin-bottom: 25px;
 }
-/* line 343, sass/screen.scss */
+/* line 531, sass/screen.scss */
 .wrapper .comments .comment-message .answer:hover, .wrapper .comments .comment-message .answer-count:hover {
   border-color: transparent;
 }
-/* line 347, sass/screen.scss */
+/* line 535, sass/screen.scss */
 .wrapper .comments .comment-message .answer-count:after {
   content: "";
   display: inline-block;
@@ -469,7 +685,7 @@ body {
   background-repeat: no-repeat;
   margin: -8px 5px;
 }
-/* line 357, sass/screen.scss */
+/* line 545, sass/screen.scss */
 .wrapper .comments .comment-message input.name, .wrapper .comments .comment-message input.mail {
   width: 90%;
   height: 40px;
@@ -481,16 +697,16 @@ body {
   background-position: 16px 50%;
   margin-bottom: 30px;
 }
-/* line 369, sass/screen.scss */
+/* line 557, sass/screen.scss */
 .wrapper .comments .comment-message .name {
   background-image: url("../img/man.png");
 }
-/* line 372, sass/screen.scss */
+/* line 560, sass/screen.scss */
 .wrapper .comments .comment-message .mail {
   float: right;
   background-image: url("../img/mail.png");
 }
-/* line 376, sass/screen.scss */
+/* line 564, sass/screen.scss */
 .wrapper .comments .comment-message .mk-feedback {
   width: 100%;
   height: 135px;
@@ -498,7 +714,7 @@ body {
   border: 1px solid #000;
   padding: 10px;
 }
-/* line 383, sass/screen.scss */
+/* line 571, sass/screen.scss */
 .wrapper .comments .comment-message .add-feedback {
   width: 198px;
   height: 54px;
@@ -513,13 +729,42 @@ body {
   float: right;
   margin-bottom: 30px;
 }
-/* line 398, sass/screen.scss */
+/* line 586, sass/screen.scss */
 .wrapper .comments .answer-form {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
-/* line 406, sass/screen.scss */
+/* line 594, sass/screen.scss */
+article.credit {
+  clear: both;
+  height: auto;
+  margin-top: -210px;
+  margin-bottom: 242px;
+  background: #fff;
+  padding: 45px 0;
+}
+/* line 601, sass/screen.scss */
+article.credit h2 {
+  font: 24px "ProximaNovaBold", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 606, sass/screen.scss */
+article.credit p {
+  padding-top: 20px;
+}
+/* line 609, sass/screen.scss */
+article.credit .more {
+  float: right;
+  display: block;
+  padding-right: 15px;
+  font-size: 16px;
+  font-family: "ProximaNovaRegular", "Arial", sans-serif;
+  text-decoration: underline;
+}
+
+/* line 618, sass/screen.scss */
 .footer {
   height: 240px;
   margin-top: -240px;
@@ -527,23 +772,23 @@ body {
   background: #0f528b;
   border-bottom: solid 2px rgba(255, 255, 255, 0.46);
 }
-/* line 412, sass/screen.scss */
+/* line 624, sass/screen.scss */
 .footer .footer-wraper {
   width: 90%;
   margin: auto;
   max-width: 960px;
 }
-/* line 419, sass/screen.scss */
+/* line 631, sass/screen.scss */
 .footer .footer-wraper .link-block {
   display: block;
   text-align: center;
   margin-top: 30px;
 }
-/* line 423, sass/screen.scss */
+/* line 635, sass/screen.scss */
 .footer .footer-wraper .link-block li {
   margin-bottom: 25px;
 }
-/* line 425, sass/screen.scss */
+/* line 637, sass/screen.scss */
 .footer .footer-wraper .link-block li a {
   display: block;
   color: #fff;
@@ -551,21 +796,21 @@ body {
   font-weight: normal;
 }
 
-/* line 436, sass/screen.scss */
+/* line 648, sass/screen.scss */
 .copyright {
   height: 64px;
   background: #0f528b;
   line-height: 64px;
 }
-/* line 440, sass/screen.scss */
+/* line 652, sass/screen.scss */
 .copyright .company {
   text-align: left;
 }
-/* line 443, sass/screen.scss */
+/* line 655, sass/screen.scss */
 .copyright .info {
   text-align: right;
 }
-/* line 446, sass/screen.scss */
+/* line 658, sass/screen.scss */
 .copyright p {
   font: 16px "ProximaNovaRegular", "Arial", sans-serif;
   color: #fff;
