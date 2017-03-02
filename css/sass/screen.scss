@@ -7,6 +7,7 @@
 html {
   width: 100%;
   height: 100%;
+  min-width: 480px;
 }
 .row{
     margin: 0;
@@ -80,6 +81,68 @@ body {
             }
         }
     }
+    .fixes{
+        position: absolute;
+        right: 0;
+        background: #fff;
+        width: 285px;
+        top: 92px;
+        z-index: 100;
+        border-radius: 7px;
+        height: 334px;
+        overflow: hidden;
+        padding-right: 7px;
+        #menu-scroller-value{
+            display: none;
+        }
+        .noUi-vertical{
+            width: 14px;
+        }
+        .noUi-base{
+            background: #d7d7d7;
+            border-radius: 10px;
+        }
+        .noUi-connect{
+            background: #959595;
+            border-radius: 10px;
+        }
+        .noUi-vertical .noUi-handle {
+            width: 20px;
+            height: 20px;
+            left: -4px;
+            top: -9px;
+            border-radius: 50%;
+            background: #959595;
+            -webkit-box-shadow: none;
+             box-shadow: none;
+             border: none; 
+        }
+        .noUi-handle:after, .noUi-handle:before{
+            background: transparent;
+        }
+    }
+    .menu-block {
+       position: relative;
+        li{
+            display: block;
+            width: 100%;
+            text-align: center;
+            height: 42px;
+            border-bottom: 2px solid rgba(0,0,0,0.23);
+            text-transform: uppercase;
+            font: 16px "ProximaNovaRegular", "Arial", sans-serif;
+            line-height: 42px;
+            font-weight: bold;
+
+        }
+    }
+    #menu-scroller{    
+        height: 93%;
+        top: 3%;
+        position: absolute;
+        right: 5px;
+        border-radius: 10px;
+    }
 }
 .wrapper{
     .header-page{
@@ -142,6 +205,7 @@ body {
             }
             li{
                 display: inline-block;
+                margin-left: -4px
             }
         }
         .credit-val, .limit-val{

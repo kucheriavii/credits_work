@@ -1,35 +1,24 @@
-var creditSlider = document.getElementById('credit-scroller');
+/***************************************************************************/
+var menuSlider = document.getElementById('menu-scroller');
 
-noUiSlider.create(creditSlider, {
-	start: 5000,
-	behaviour: 'tap',
-	connect: [true, false],
-	range: {
-		'min':  0,
-		'max':  10000
-	},
-	step: 50
-});
-var directionField = document.getElementById('credit-value-field');
-
-creditSlider.noUiSlider.on('update', function( values, handle ){
-	directionField.innerHTML = Number(values[handle]);
-});
-
-var limitSlider = document.getElementById('limit-scroller');
-
-noUiSlider.create(limitSlider, {
+noUiSlider.create(menuSlider, {
 	start: 10,
 	behaviour: 'tap',
 	connect: [true, false],
 	range: {
 		'min':  1,
-		'max':  30
+		'max':  100
 	},
+	orientation: "vertical",
 	step: 1
 });
-var limitField = document.getElementById('limit-value-field');
+var menuField = document.getElementById('menu-scroller-value');
 
-limitSlider.noUiSlider.on('update', function( values, handle ){
-	limitField.innerHTML = Number(values[handle]);
+menuSlider.noUiSlider.on('update', function( values, handle ){
+	menuField.innerHTML = Number(values[handle]);
+	$ulPosition = Number($('#menu-scroller-value').value);
+	menuBlockTop = Number(values[handle])*-1+"%";
+	$(".menu-block").css('top', menuBlockTop)
+
 });
+/***************************************************************************/
