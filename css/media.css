@@ -1,0 +1,190 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container{
+		padding: 0;
+		margin: 0;
+	}
+	.header .logo {
+	  font-size: 20px;
+	}
+	.header .menu button{
+		font-size: 18px;
+	}
+	.wrapper .credit-box{
+		height: 380px;
+	}
+	.wrapper .credrow {
+	    height: 380px;
+	}
+	.credit-raiting{
+		display: block;
+		clear: both;
+	}
+	.wrapper .credit-box .credit-raiting a img{
+		padding-left: 0;
+	}
+	.wrapper ul.raiting {
+    	display: block;
+	    margin-top: 10px;
+	    padding-left: 0;
+	    overflow: auto;
+	}
+	.wrapper .credit-box{
+		padding: 40px 5px 5px;
+	}
+	.wrapper .credit-box .my-credit {
+	    position: relative;
+	    height: 125px;
+	}
+	.wrapper .credit-box .my-credit .credit .credit-proc-text{
+		text-align: right;
+	}
+	.wrapper .credit-box .my-credit .credit .credit-term-text{
+		text-align: left;
+	}
+	.wrapper .credit-box .my-credit .credit .credit-size-text{
+		text-align: left;
+	}
+	.wrapper .credit-box .my-credit .credit .credit-proc{
+		float: right;
+	}
+	.order{
+		clear: both;
+	}
+	.order .btn-green {
+	    float: left;
+	    box-shadow: 0 5px 2px #eee;
+	}
+	.wrapper ul.raiting, .wrapper .form {
+	    margin: 10px 15px;
+	}
+	.wrapper .credit-box .order button {
+	    width: 47%;
+	    float: right;
+	    margin-top: 20px;
+	}
+	.wrapper .credit-box .order .btn-green{
+		float: left;
+	}
+	.wrapper article.my-credit-article {
+	    clear: both;
+	    padding: 0 15px;
+	}
+	.wrapper article.my-credit-article .more{
+		display: block;
+	}
+	.wrapper article.my-credit-article .more {
+	    display: inline-block;
+	    float: right;
+	    margin-top: -20px;
+	}
+	.wrapper .feedback {
+	    width: 100%;
+	    margin: 0 auto;
+	    margin-top: 60px;
+	    padding: 0 0px;
+	}
+	.wrapper .feedback .form input.name, .wrapper .feedback .form input.mail {
+	    width: 100%;
+	    border: 2px solid #1265ac;
+	}
+	.wrapper .feedback .form .mk-feedback {
+	    border: 2px solid #1265ac;
+	}
+	.wrapper .comments .comment-message .raiting {
+	    float: left;
+	    width: 50%;
+	    position: absolute;
+	    left: -39%;
+	    top: 7%;
+	}
+	.wrapper .comments .comment-message .date {
+	    margin-right: 0px;
+	}
+	.photo{
+		margin-top: 40px;
+	}
+	.wrapper .comments .comment-message .answer, .wrapper .comments .comment-message .answer-count {
+	    margin-left: 15px;
+	}
+	.footer {
+    	height: 100%;
+	}
+	.wrapper .comments .comment-message input.name, .wrapper .comments .comment-message input.mail {
+	    width: 100%;
+	}
+	.answer-form .photo, .wrapper .comments .answer-form .photo img{
+		margin: 0;
+	}
+	
+	.container {
+	    padding: 0;
+	    margin: 0;
+	    margin-bottom: 0px;
+	    width: 100%;
+	}
+	.footer{
+		height: auto;
+		margin-top: -168px;
+	}
+
+	.copyright{
+		height: auto;
+	}
+	.copyright .info{
+		float: left;
+	}
+	.copyright p {
+	    font: 16px "ProximaNovaRegular", "Arial", sans-serif;
+	    color: #fff;
+	    line-height: 64px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 750px) {
+	.wrapper .comments {
+	    background: #fff;
+	    margin-bottom: 50px;
+	    margin-top: 56px;
+	    border-radius: 8px;
+	    width: 480px;
+	    margin: 0 auto;
+	}
+	.wrapper .comments .comment-message .raiting {
+	    float: left;
+	    width: 50%;
+	    position: absolute;
+	    left: -140px;
+	    top: 5%;
+	}
+	.answer-form .inarea{
+		width: 460px;
+	    margin-left: -184px;
+	    margin-top: 20px;
+	}
+	.answer-form .photo, .wrapper .comments .answer-form .photo img{
+		margin: 0;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+

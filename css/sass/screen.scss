@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
 }
 .wrapper .empty {
-  height: 304px;
+  height: 240px;
 }
 .header-wrapper{
     width: 100%;
@@ -156,21 +156,21 @@ body {
                     padding-bottom: 4px; 
                 }
                 .credit-val{
-                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
                         content: " UAH";
                     }
                 }
                 .credit-term{
-                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
                         content: " UAH";
                     }
                 }
                 .credit-proc{
-                    font: 18px, "ProximaNovaBold", "Arial", sans-serif;
+                    font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
                         content: " UAH";
@@ -210,6 +210,9 @@ body {
             p{
                 margin-bottom: 20px;
             }
+        }
+        .more{
+            display: none;
         }
     }
     .feedback{
@@ -282,6 +285,7 @@ body {
         background: #fff;
         margin-bottom: 50px;
         margin-top: 56px;
+        border-radius: 8px;
         .photo{
             img{
                 display: block;
@@ -300,6 +304,7 @@ body {
             }
         }
         .comment-message{
+
             .raiting{
                 float: left;
                 width: 50%;
@@ -328,7 +333,7 @@ body {
             }
            .answer, .answer-count{
                 float: right;
-                font: 18px, "ProximaNovaRegular";
+                font: 18px "ProximaNovaRegular";
                 color: #333;
                 text-decoration: none;
                 margin-left: 50px;
@@ -348,13 +353,99 @@ body {
                 background-repeat: no-repeat;
                 margin: -8px 5px;
            }
+           /*form styles*/
+           input.name, input.mail{
+                width: 90%;
+                height: 40px;
+                display: block;
+                border-radius: 4px;
+                border: 1px solid #000;
+                padding-left: 40px;
+                background-repeat: no-repeat;
+                background-position: 16px 50%;
+                margin-bottom: 30px;
+
+            }
+            .name{
+                background-image: url("../img/man.png");
+            }
+            .mail{
+                float: right;
+                background-image: url("../img/mail.png");
+            }
+            .mk-feedback{
+                width: 100%;
+                height: 135px;
+                border-radius: 4px;
+                border: 1px solid #000;
+                padding: 10px; 
+            }
+            .add-feedback{
+                width: 198px;
+                height: 54px;
+                border-radius: 7px;
+                display: block;
+                border: solid 1px #ccc;
+                font: 16px "ProximaNovaBold", "Arial", sans-serif;
+                text-transform: uppercase;
+                margin-top: 14px;
+                background: #6db63e;
+                color: #fff;
+                float: right;
+                margin-bottom: 30px;
+            }
         }
+        .answer-form{
+            width: 90%;
+            margin: auto;
+        }
+
     }
+
 }
 .footer {
-  height: 304px;
-  margin-top: -304px;
+  height: 240px;
+  margin-top: -240px;
   position: relative;
-  background: #333;
-  font-size: 20px;
+  background: #0f528b;
+  border-bottom: solid 2px rgba(255,255,255,0.46);
+  .footer-wraper{
+    width: 90%;
+    margin: auto;
+    max-width: 960px;
+    .footer-left{}
+    .footer-center{}
+    .footer-right{}
+    .link-block{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        li{
+            margin-bottom: 25px;
+            a{
+                display: block;
+                color: #fff;
+                font: 17px "ProximaNovaRegular", "Arial", sans-serif;
+                font-weight: normal;
+            }
+        }
+    }
+  }
+
+}
+.copyright{
+    height: 64px;
+    background: #0f528b;
+    line-height: 64px;
+    .company{
+        text-align: left;
+    }
+    .info{
+        text-align: right;
+    }
+    p{
+        font: 16px "ProximaNovaRegular", "Arial", sans-serif;
+        color: #fff;
+        line-height: 64px;
+    }
 }
