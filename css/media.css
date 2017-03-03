@@ -141,7 +141,11 @@
 		height: auto;
 		margin-top: -168px;
 	}
-
+	.footer .footer-wraper .link-block {
+	    display: block;
+	    text-align: center;
+	    margin-top: 12px;
+	}
 	.copyright{
 		height: auto;
 	}

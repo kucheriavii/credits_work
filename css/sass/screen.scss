@@ -136,7 +136,13 @@ body {
             font: 16px "ProximaNovaRegular", "Arial", sans-serif;
             line-height: 42px;
             font-weight: bold;
-
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: #333;
+            width: 100%;
+            height: 100%;
         }
     }
     #menu-scroller{    
@@ -414,21 +420,24 @@ body {
                     font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
-                        content: " UAH";
+                        content: " uah";
+                        text-transform: uppercase;
                     }
                 }
                 .credit-term{
                     font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
-                        content: " UAH";
+                        content: " uah";
+                        text-transform: uppercase;
                     }
                 }
                 .credit-proc{
                     font: 18px "ProximaNovaBold", "Arial", sans-serif;
                     font-weight: bold;
                     &:after{
-                        content: " UAH";
+                        content: " uah";
+                        text-transform: uppercase;
                     }
                 } 
             }
